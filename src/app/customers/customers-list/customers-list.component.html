@@ -12,14 +12,14 @@
   </thead>
   <tr *ngFor="let cust of filteredCustomers">
     <td>
-      <a> {{cust.name}} </a>
+      <a> {{cust.name | capitalize}} </a>
     </td>
     <td>{{ cust.city }}</td>
-    <td>{{ cust.orderTotal }}</td>
+    <td>{{ cust.orderTotal | currency: currencyCode:'symbol' }}</td>
   </tr>
   <tr *ngIf="filteredCustomers && filteredCustomers.length">
     <td colspan="2">&nbsp;</td>
-    <td>{{ customersOrdertotal }}</td>
+    <td>{{ customersOrdertotal | currency: currencyCode:'symbol' }}</td>
   </tr>
   <tr *ngIf="!filteredCustomers || !filteredCustomers.length">
     <td colspan="4">No customers found</td>
