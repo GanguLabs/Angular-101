@@ -3,15 +3,15 @@ import { CommonModule } from '@angular/common';
 
 import { CustomersComponent } from './customers.component';
 import { CustomersListComponent } from './customers-list/customers-list.commponent';
+import { FilterTextboxComponent } from './customers-list/filter-textbox.component';
 
 @NgModule({
   declarations: [
-        CustomersComponent,
-        CustomersListComponent,
+    CustomersComponent,
+    CustomersListComponent,
+    FilterTextboxComponent,
   ],
-  imports: [
-    CommonModule,
-    ],
-  exports: [CustomersComponent]
+  imports: [CommonModule],
+  exports: [CustomersComponent],
 })
-export class CustomersModule { }
+export class CustomersModule {}
