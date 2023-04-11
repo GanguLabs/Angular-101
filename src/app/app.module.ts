@@ -8,16 +8,9 @@ import { CustomersModule } from './customers/customers.module';
 import { SharedModule } from './shared/shared.module';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    CustomersModule,
-    SharedModule,
-    AppRoutingModule
-  ],
+  declarations: [AppComponent],
+  imports: [BrowserModule, CustomersModule, SharedModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent] // this defines the startup component
+  bootstrap: [AppComponent], // this defines the startup component
 })
-export class AppModule { }
+export class AppModule {}
