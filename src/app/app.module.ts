@@ -16,7 +16,7 @@ import { SharedModule } from './shared/shared.module';
     CustomersModule,
     SharedModule,
     CoreModule,
-    AppRoutingModule,
+    AppRoutingModule, // this is also added automatically by the cli
     HttpClientModule,
   ],
   providers: [],
